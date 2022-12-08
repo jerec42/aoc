@@ -1,0 +1,4 @@
+func PrettyPrint(ugly interface{}) string {
+	pretty, _ := json.MarshalIndent(ugly, "", "\t")
+	return fmt.Sprintln(string(pretty))
+}
